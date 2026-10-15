@@ -44,7 +44,7 @@ interface OddsStatus {
   quota?: { remaining: number; used: number }
 }
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || ''
 
 const MODELS = [
   { key: 'elo', label: 'Elo', desc: 'Elo brut Tennis Abstract — favorise la forme historique' },

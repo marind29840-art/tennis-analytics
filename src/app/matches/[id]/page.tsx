@@ -105,7 +105,7 @@ interface MatchDetail {
   next_predicted_opponents: { round: string; matchup: any }[]
 }
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || ''
 
 // ----------------- Helpers -----------------
 const pct = (v: number | null | undefined): string => v == null ? '—' : `${(v * 100).toFixed(1)}%`

@@ -26,7 +26,7 @@ interface RunsPayload {
   scraped_at: string | null
 }
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || ''
 
 function PlayerLink({ name, slug }: { name: string; slug: string }) {
   return (

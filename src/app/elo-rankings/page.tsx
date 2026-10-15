@@ -40,7 +40,7 @@ type SurfaceFilter = 'overall' | 'hard' | 'clay' | 'grass'
 type SortKey = 'rank' | 'name' | 'age' | 'elo' | 'peak_elo' | 'atp_rank'
 type SortDir = 'asc' | 'desc'
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || ''
 const PAGE_SIZE = 50
 
 const SURFACES: { key: SurfaceFilter; label: string; color: string }[] = [

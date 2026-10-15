@@ -37,7 +37,7 @@ const COLUMNS: { key: SortKey; label: string; align?: 'left' | 'right' }[] = [
   { key: 'points',  label: 'Points',   align: 'right' },
 ]
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || ''
 
 export default function ATPRankingsPage() {
   const { data, isLoading, error } = useQuery({

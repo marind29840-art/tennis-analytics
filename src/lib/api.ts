@@ -3,7 +3,7 @@ import { useQuery } from '@tanstack/react-query'
 import type { MatchListItem, PlayerProfile, ValueBet, StreaksOverview, MatchDetail, RankingPoint, CompareData } from './types'
 
 const api = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000',
+  baseURL: process.env.NEXT_PUBLIC_API_URL || '',
   timeout: 10000,
 })
 

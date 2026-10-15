@@ -65,7 +65,7 @@ interface PlayerProfile {
   completed_matches: CompletedItem[]
 }
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || ''
 
 function StatBlock({ label, value, suffix, accent }: { label: string; value: string | number | null; suffix?: string; accent?: string }) {
   return (

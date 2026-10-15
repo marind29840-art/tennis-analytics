@@ -55,7 +55,7 @@ interface TournamentDetail {
   counts: { players: number; upcoming: number; completed: number }
 }
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || ''
 
 type Tab = 'forecast' | 'upcoming' | 'completed' | 'bracket'
 

@@ -44,7 +44,7 @@ interface TopBet {
   verdict: string
 }
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || ''
 
 const pct = (v: number): string => `${(v * 100).toFixed(1)}%`
 

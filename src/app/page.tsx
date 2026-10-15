@@ -58,7 +58,7 @@ interface UpcomingMatch {
   hours_until_start?: number | null
 }
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || ''
 
 const TOUR_FILTERS: { key: string; label: string; color: string }[] = [
   { key: 'all',        label: 'Tous',       color: 'text-slate-200' },
