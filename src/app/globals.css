@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 2 6 23;
+    --foreground: 248 250 252;
+  }
+
+  body {
+    @apply bg-slate-950 text-slate-100 antialiased;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  * {
+    @apply border-slate-800;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-slate-900 border border-slate-800 rounded-xl;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium border;
+  }
+
+  .score-high { @apply text-emerald-400; }
+  .score-mid { @apply text-amber-400; }
+  .score-low { @apply text-red-400; }
+
+  .tab-active {
+    @apply bg-blue-600/20 text-blue-400 border-b-2 border-blue-500;
+  }
+
+  .tab-inactive {
+    @apply text-slate-400 hover:text-slate-200 hover:bg-slate-800/50;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-slate-900;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-700 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-600;
+}

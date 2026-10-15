@@ -1,0 +1,17 @@
+# dependencies
+node_modules/
+
+# next.js
+.next/
+out/
+
+# env (never commit secrets)
+.env
+.env.local
+.env*.local
+
+# system
+.DS_Store
+*.log
+
+# IMPORTANT: do NOT ignore src/data/snapshot — those JSONs are the deployed data
